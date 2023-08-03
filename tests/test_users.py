@@ -1,10 +1,5 @@
 import json
 
-import pytest
-from api.db import get_db
-from api.users import get_users
-from flask import jsonify
-
 
 def test_get_users(client):
     response = client.get('/users/')
